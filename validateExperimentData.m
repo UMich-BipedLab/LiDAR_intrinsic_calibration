@@ -1,3 +1,35 @@
+%{
+* Copyright (C) 2013-2025, The Regents of The University of Michigan.
+* All rights reserved.
+* This software was developed in the Biped Lab (https://www.biped.solutions/) 
+* under the direction of Jessy Grizzle, grizzle@umich.edu. This software may 
+* be available under alternative licensing terms; contact the address above.
+* Redistribution and use in source and binary forms, with or without
+* modification, are permitted provided that the following conditions are met:
+* 1. Redistributions of source code must retain the above copyright notice, this
+*    list of conditions and the following disclaimer.
+* 2. Redistributions in binary form must reproduce the above copyright notice,
+*    this list of conditions and the following disclaimer in the documentation
+*    and/or other materials provided with the distribution.
+* THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS AS IS AND
+* ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+* DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+* ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+* (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+* LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+* ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+* (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+* SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+* The views and conclusions contained in the software and documentation are those
+* of the authors and should not be interpreted as representing official policies,
+* either expressed or implied, of the Regents of The University of Michigan.
+* 
+* AUTHOR: Bruce JK Huang (bjhuang[at]umich.edu)
+* WEBSITE: https://www.brucerobot.com/
+%}
+
+
 %Validate real experiment data
 clear, clc
 opts.num_beams = 32;
@@ -6,12 +38,12 @@ opts.datatype = "Experiment";
 opt_formulation = ["Lie","BaseLine1","BaseLine3"]; % Lie or Spherical
 opts.method = 3;
 opts.show_results = 1;
-opts.path = ".\results\15targets\Validation\BL3\";
+opts.path = ".esultstargets\Validation\BL3\";
 opts.load_all = 1;
 opts.threshold = -1;
 
-t_path = ".\results\15targets\training_data\BL3\";
-v_path = "..\intrinsic_lidar_calibration\Feb2020\validation_bag\";
+t_path = ".esultstargets	raining_data\BL3\";
+v_path = "..\intrinsic_lidar_calibration\Feb2020alidation_bag\";
 
 load(t_path + 'realExpDelta.mat');
 data = parseValidationbag(v_path, "*.bag",5,1);
