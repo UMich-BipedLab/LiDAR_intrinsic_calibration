@@ -1,11 +1,6 @@
 # intrinsic_3d_lidar_camera_calibration
 ## Overview
-This is a package for intrinsic calibration of a 3D LiDAR 
-described in paper: 3D LiDAR Intrinsic Calibration and Automatic System
-for LiDAR to Camera Calibration. 
-In experimental data, we show that it outperforms physics-based models for a spinning
-LiDAR. In simulation, we show how this perspective can be applied to a solid state
-LiDAR.  
+This is a package for intrinsic calibration of a 3D LiDAR described in paper: 3D LiDAR Intrinsic Calibration and Automatic System for LiDAR to Camera Calibration. In experimental data, we show that it outperforms physics-based models for a spinning LiDAR. In [simulation](https://github.com/UMich-BipedLab/lidar_simulator), we show how this perspective can be applied to a solid state LiDAR.  
 
 To run the code, place the test datasets in the opts.mat_path folder, and run the main.m!
 
@@ -31,28 +26,45 @@ for a spinning LiDAR. In simulation, we show how this perspective can be applied
 solid state LiDAR. We complete the paper by reporting on an open- source automatic
 system for target-based extrinsic calibration from a LiDAR to a camera.
 
-## Quick View
-TODO
+
+## Introduction Video
+Please checkout the introduction [video](https://www.brucerobot.com/automatic-calibration). It highlights some importants keypoints in the paper!  
+
+[<img src="https://github.com/UMich-BipedLab/LiDAR_intrinsic_calibration/blob/release_v1/figure/IntroVideo.png" width="960">](https://www.brucerobot.com/automatic-calibration)
+
+
+## System Diagram Overview
+This figure motivates the main contribution of the paper, a means of calibrating a LiDAR without modeling the physical mechanism itself. Top left: shows a simple physics-based calibration model for a spinning LiDAR. 
+1. Top right: shows a similar model with more parameters, also for a spinning LiDAR. In the literature, the number of parameters can vary from three to 10.
+2. Bottom left and bottom right show, respectively, an optical phased array solid-state LiDAR and a MEMS-based LiDAR. There are many design options and many manufacturing steps to fabricate these LiDAR. Is it necessary, or even possible, to parameterize all of them? This paper moves the attention to the geometry of the LiDAR's point cloud  and proposes that calibration can be achieved via shape-preserving transformations. 
+3. In experiments, the proposed method outperforms the methods showed in top figures for spinning \lidarsN, and via simulation, we support that it may be used to calibrate a solid-state LiDAR as well.
+
+<img src="https://github.com/UMich-BipedLab/LiDAR_intrinsic_calibration/blob/release_v1/figure/UnifyingCalibration.jpg" width="960">
+
+
+## Results Quick View
+### Induce 3-parameter perturbation model (N1),  6-parameter perturbation model (N2), and Sim(3) noise model (N3) for a spinning LiDAR in the [simulator](https://github.com/UMich-BipedLab/lidar_simulator).
+<img src="https://github.com/UMich-BipedLab/LiDAR_intrinsic_calibration/blob/release_v1/figure/SimulationSpinning.png" width="960">
+
+### Geometric uncertainty of a solid-state LiDAR by assuming the plane of the wafer is slightly warped.
+<img src="https://github.com/UMich-BipedLab/LiDAR_intrinsic_calibration/blob/release_v1/figure/SimulationSSLiDAR.png" width="960">
+
+### Experiments data collected using different numbers of targets in the calibration scene.
+<img src="https://github.com/UMich-BipedLab/LiDAR_intrinsic_calibration/blob/release_v1/figure/ExpSpinning.png" width="640">
+
 
 # Why important? 
-TODO
-
-## Why this package? (coming strong in a week)
-TODO
+Intrinsic calibration ensures that obtained measurements are meaningful and valid!
 
 
-## Overall pipeline (coming strong in a week)
-TODO
-
-
-## Presentation and Video (coming strong in a week)
-https://www.brucerobot.com/
+## Calibration Targets
+Any **square** targets would be fine. The dimensions are assumed known.
+note: You can place any number of targets with different size in different datasets.
 
 
 ## Required packages
-Please download _matlab_utils_ from [here](https://github.com/UMich-BipedLab/matlab_utils). 
-
-
+Please download _matlab_utils_ from [here](https://github.com/UMich-BipedLab/matlab_utils).   
+To automatic extract LiDAR targets, we use [LiDARTag](https://github.com/UMich-BipedLab/LiDARTag) package and its [message](https://github.com/UMich-BipedLab/LiDARTag_msgs).
 
 ## Dataset 
 Please download point cloud mat files from [here](https://drive.google.com/drive/folders/11MN0pV5JspMyq1mpwfo-3T0KUyxeRMVP?usp=sharing) and put them into opts.mat_path folder.
@@ -62,20 +74,17 @@ Please download point cloud mat files from [here](https://drive.google.com/drive
 To run the code, place the test datasets in the opts.mat_path folder, and run the main.m!
 
 
-## Parameters (coming strong in a week)
-TODO
-
-
-## Examples (coming strong in a week)
-TODO
-
-
-# Qualitative results
-TODO
-
-# Quantitative results
-TODO
-
 ## Citations (coming strong in a week)
-The  Improvements to Target-Based 3D LiDAR to Camera Calibration is described in: 
+The detail is described in: 
+Jiunn-Kai Huang, Chenxi Feng, Madhav Achar, Maani Ghaffari, and Jessy W. Grizzle, "3D LiDAR Intrinsic Calibration and Automatic System for LiDAR to Camera Calibration" ([PDF](https://github.com/UMich-BipedLab/automatic_lidar_camera_calibration/blob/release_v1/AutomaticCalibration.pdf))(arXiv will appear soon))
 
+<!--
+```
+@article{huang2019improvements,
+  title={Improvements to Target-Based 3D LiDAR to Camera Calibration},
+  author={Huang, Jiunn-Kai and Grizzle, Jessy W},
+  journal={arXiv preprint arXiv:1910.03126},
+  year={2019}
+}
+```
+-->
