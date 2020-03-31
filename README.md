@@ -13,6 +13,9 @@ This package has been tested under MATLAB 2019a and Ubuntu 16.04.
 More detailed introduction will be updated in a week. Sorry for the inconvenience!
 
 
+**[Issues]**
+If you encounter _any_ issues, I would be happy to help. If you cannot find a related one in the existing issues, please open a new one. I will try my best to help! 
+
 ## Abstract
 Periodic intrinsic and extrinsic (re-)calibrations are essential for modern
 perception and navigation systems deployed on autonomous robots. To date, intrinsic
