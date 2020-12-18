@@ -79,15 +79,13 @@ To run the code, place the test datasets in the opts.mat_path folder, and run th
 
 ## Citations (coming strong in a week)
 The detail is described in: 
-Jiunn-Kai Huang, Chenxi Feng, Madhav Achar, Maani Ghaffari, and Jessy W. Grizzle, "3D LiDAR Intrinsic Calibration and Automatic System for LiDAR to Camera Calibration" ([PDF](https://github.com/UMich-BipedLab/automatic_lidar_camera_calibration/blob/release_v1/AutomaticCalibration.pdf))(arXiv will appear soon))
+Jiunn-Kai Huang, Chenxi Feng, Madhav Achar, Maani Ghaffari, and Jessy W. Grizzle, "Global Unifying Intrinsic Calibration for Spinning and Solid-State LiDARs" ([arXiv](https://arxiv.org/abs/2012.03321))
 
-<!--
 ```
-@article{huang2019improvements,
-  title={Improvements to Target-Based 3D LiDAR to Camera Calibration},
-  author={Huang, Jiunn-Kai and Grizzle, Jessy W},
-  journal={arXiv preprint arXiv:1910.03126},
-  year={2019}
+@article{huang2020global,
+  title={Global Unifying Intrinsic Calibration for Spinning and Solid-State LiDARs},
+  author={Huang, Jiunn-Kai and Feng, Chenxi and Achar, Madhav and Ghaffari, Maani and Grizzle, Jessy W},
+  journal={arXiv preprint arXiv:2012.03321},
+  year={2020}
 }
 ```
--->
