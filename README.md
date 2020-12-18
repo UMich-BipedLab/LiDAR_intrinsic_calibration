@@ -77,7 +77,7 @@ Please download point cloud mat files from [here](https://drive.google.com/drive
 To run the code, place the test datasets in the opts.mat_path folder, and run the main.m!
 
 
-## Citations (coming strong in a week)
+## Citations
 The detail is described in: 
 Jiunn-Kai Huang, Chenxi Feng, Madhav Achar, Maani Ghaffari, and Jessy W. Grizzle, "Global Unifying Intrinsic Calibration for Spinning and Solid-State LiDARs" ([arXiv](https://arxiv.org/abs/2012.03321))
 
