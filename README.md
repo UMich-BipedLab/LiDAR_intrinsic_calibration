@@ -59,16 +59,16 @@ note: You can place any number of targets with different size in different datas
 ## Installation
 1. Clone https://github.com/UMich-BipedLab/3D_lidar_intrinsic_calibration
 2. Clone https://github.com/UMich-BipedLab/matlab_utils
-3. Clone https://github.com/UMich-BipedLab/convex_relaxation_sim3 and follow the README.md there
+3. Clone https://github.com/UMich-BipedLab/global_sim3_solver and follow the README.md there
 to install CVX library
 
 ###### Note: 
 To automatic extract LiDAR targets, we use [LiDARTag](https://github.com/UMich-BipedLab/LiDARTag) package and its [message](https://github.com/UMich-BipedLab/LiDARTag_msgs).
 
 ## Dataset
-Please download datasets from here:
-[Training dataset](https://drive.google.com/drive/folders/1JvsyqJjo6QBHG8SVGNighjNywdgKy67R)
-[validation dataset](https://drive.google.com/drive/folders/1Jbgf1LbYXceT_C1EmoeJ4pJhc9fsctGu)
+Please download datasets from here:  
+[Training dataset](https://drive.google.com/drive/folders/1zWWLG9hihDuV9nYf7GQvgstnJShX2zSQ?usp=sharing)  
+[validation dataset](https://drive.google.com/drive/folders/1o5VmbwKFHWNm-7X89y1GguL9fUHPiQi7?usp=sharing)
 
 ## Running
 To get it run properly,
