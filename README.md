@@ -57,7 +57,7 @@ Any **square** targets would be fine. The dimensions are assumed known.
 note: You can place any number of targets with different size in different datasets.
 
 ## Installation
-1. Clone https://github.com/UMich-BipedLab/3D_lidar_intrinsic_calibration
+1. Clone https://github.com/UMich-BipedLab/LiDAR_intrinsic_calibration
 2. Clone https://github.com/UMich-BipedLab/matlab_utils
 3. Clone https://github.com/UMich-BipedLab/global_sim3_solver and follow the README.md there
 to install CVX library
